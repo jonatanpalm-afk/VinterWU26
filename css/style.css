@@ -1,1 +1,59 @@
-/* Här skrivs all din CSS */
+#container {
+background-color:#423E28;
+display: grid;
+height: 200 vh;
+grid-template-columns: 5%,22.5%,22.5%,22.5%,22.5%,5%;
+grid-template-rows: auto;
+}
+#page1 {
+grid-template-areas: 
+'. . hd hd . .'
+'. . nav nav . .'
+'. . se se . .'
+'. ft ft ft ft .'
+;
+}
+#page2 {
+grid-template-areas:
+'. . hd hd . .'
+'. se se se se .'
+'. ft ft ft ft .'
+
+;
+}
+#page3 {
+    grid-template-areas: 
+    '.. hd hd . .'
+    '. se se se se .'
+    '. ft ft ft ft .'
+    ;
+}
+
+header {
+    background-color: crimson;
+    grid-area: hd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+
+}
+nav {
+    grid-area: nav;
+    display: flex;
+    background-color: blue;
+}
+section {
+    grid-area: se;
+    background-color: chocolate;
+}
+footer {
+    grid-area: ft;
+    justify-content: center;
+    align-items: center;
+    background-color: chartreuse;
+
+}
+ul {
+
+}
